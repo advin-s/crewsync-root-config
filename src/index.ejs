@@ -34,7 +34,8 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "@crewsync/utility":"//localhost:9001/crewsync-utility.js"
       }
     }
   </script>
@@ -47,8 +48,8 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@crewsync/root-config": "//localhost:9000/crewsync-root-config.js"
+        "@crewsync/root-config": "//localhost:9000/crewsync-root-config.js",
+        "@crewsync/user":"//localhost:4200/main.js"
       }
     }
   </script>
@@ -58,7 +59,7 @@
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
   -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
